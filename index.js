@@ -68,6 +68,7 @@ function removeFromCart(item) {
 
 function placeOrder(cardNumber) {
   // write your code here
+<<<<<<< HEAD
   if(cardNumber) {
     let str = `Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`
     cart.splice(0, cart.length)
@@ -75,4 +76,17 @@ function placeOrder(cardNumber) {
   } else {
     return `Sorry, we don't have a credit card on file for you.`
   }
+=======
+ // if(cardNumber) {
+    return `Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`
+    cart.splice(0, cart.length)
+    console.log(cart.length)
+ // } else {
+    return `Sorry, we don't have a credit card on file for you.`
+ // }
+>>>>>>> 14ba16b06887a391dcd169b2a896e4ad55af4419
 }
+
+cart.push({itemName:'yarrak', itemPrice:100})
+placeOrder(`1234512344`)
+// console.log(cart)
